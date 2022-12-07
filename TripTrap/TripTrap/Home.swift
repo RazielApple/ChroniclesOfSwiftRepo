@@ -10,7 +10,7 @@ import MapKit
 
 struct Home: View {
     // Set a state variable to set the centre of the map and zoom level (span)
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.35, longitude: -6.266667), span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.3))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.35, longitude: -6.266667), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
     let locationManager = CLLocationManager()
     
     var locations = Location.exampleLocations
@@ -25,7 +25,15 @@ struct Home: View {
                 }
                 
                 Map(coordinateRegion: $region, annotationItems: locations)  { location in
-                    MapMarker(coordinate: location.coordinate)
+                    MapAnnotation(coordinate: location.coordinate) {
+                        NavigationLink {
+                            Text(location.name)
+                        } label: {
+                            Circle()
+                                .stroke(.red, lineWidth: 3)
+                                .frame(width: 44, height: 44)
+                        }
+                    }
                 }
                     .frame(maxHeight: 160)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
