@@ -9,8 +9,7 @@ import SwiftUI
 import MapKit
 
 struct Home: View {
-    // Set a state variable to set the centre of the map and zoom level (span)
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.35, longitude: -6.266667), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+    @EnvironmentObject var viewModel: ViewModel
     let locationManager = CLLocationManager()
     
     var locations = Location.exampleLocations
@@ -24,7 +23,7 @@ struct Home: View {
                     Spacer()
                 }
                 
-                Map(coordinateRegion: $region, annotationItems: locations)  { location in
+                Map(coordinateRegion: $viewModel.region, annotationItems: locations)  { location in
                     MapAnnotation(coordinate: location.coordinate) {
                         NavigationLink {
                             Text(location.name)
@@ -47,5 +46,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environmentObject(ViewModel())
     }
 }
