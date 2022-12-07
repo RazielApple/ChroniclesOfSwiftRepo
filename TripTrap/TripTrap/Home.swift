@@ -10,9 +10,20 @@ import MapKit
 
 struct Home: View {
     @EnvironmentObject var viewModel: ViewModel
-    let locationManager = CLLocationManager()
-    
+
     var locations = Location.exampleLocations
+    
+    @StateObject private var locationManager = LocationManager()
+    
+    var region: Binding<MKCoordinateRegion>? {
+        guard let location = locationManager.location else {
+            return MKCoordinateRegion.guinnessStorehouse().getBinding()
+        }
+        
+        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        
+        return region.getBinding()
+    }
     
     var body: some View {
         NavigationStack {
@@ -23,19 +34,22 @@ struct Home: View {
                     Spacer()
                 }
                 
-                Map(coordinateRegion: $viewModel.region, annotationItems: locations)  { location in
-                    MapAnnotation(coordinate: location.coordinate) {
-                        NavigationLink {
-                            Text(location.name)
-                        } label: {
-                            Circle()
-                                .stroke(.red, lineWidth: 3)
-                                .frame(width: 44, height: 44)
+                if let region {
+                    Map(coordinateRegion: region, interactionModes: .all, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: locations)  { location in
+                        MapAnnotation(coordinate: location.coordinate) {
+                            NavigationLink {
+                                Text(location.name)
+                            } label: {
+                                Circle()
+                                    .stroke(.red, lineWidth: 3)
+                                    .frame(width: 44, height: 44)
+                            }
                         }
                     }
+                        .frame(maxHeight: 160)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
-                    .frame(maxHeight: 160)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
 
             }
             .padding()
