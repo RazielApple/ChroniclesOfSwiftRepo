@@ -13,6 +13,8 @@ struct Home: View {
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.35, longitude: -6.266667), span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.3))
     let locationManager = CLLocationManager()
     
+    var locations = Location.exampleLocations
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -22,10 +24,11 @@ struct Home: View {
                     Spacer()
                 }
                 
-                Map(coordinateRegion: $region)
+                Map(coordinateRegion: $region, annotationItems: locations)  { location in
+                    MapMarker(coordinate: location.coordinate)
+                }
                     .frame(maxHeight: 160)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                
 
             }
             .padding()

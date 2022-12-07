@@ -14,6 +14,7 @@
 		4C25C443294099D3006C0918 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C442294099D3006C0918 /* Persistence.swift */; };
 		4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */; };
 		4C25C44E29409C58006C0918 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C44D29409C58006C0918 /* Home.swift */; };
+		4C25C45229411B20006C0918 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C45129411B20006C0918 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4C25C445294099D3006C0918 /* TripTrap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripTrap.xcdatamodel; sourceTree = "<group>"; };
 		4C25C447294099D3006C0918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C25C44D29409C58006C0918 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4C25C45129411B20006C0918 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4C25C439294099D2006C0918 /* TripTrapApp.swift */,
 				4C25C43B294099D2006C0918 /* ContentView.swift */,
 				4C25C44D29409C58006C0918 /* Home.swift */,
+				4C25C45129411B20006C0918 /* LocationModel.swift */,
 				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C442294099D3006C0918 /* Persistence.swift */,
 				4C25C447294099D3006C0918 /* Info.plist */,
@@ -152,6 +155,7 @@
 				4C25C43C294099D2006C0918 /* ContentView.swift in Sources */,
 				4C25C44E29409C58006C0918 /* Home.swift in Sources */,
 				4C25C43A294099D2006C0918 /* TripTrapApp.swift in Sources */,
+				4C25C45229411B20006C0918 /* LocationModel.swift in Sources */,
 				4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
