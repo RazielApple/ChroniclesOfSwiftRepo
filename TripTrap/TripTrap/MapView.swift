@@ -10,7 +10,7 @@ import MapKit
 
 struct MapView: View {
     @StateObject private var locationManager = LocationManager()
-//    Check the ViewModel for the TODO
+//    Check the ViewModel for the TODO.
 //    @EnvironmentObject var viewModel: ViewModel
     
     var locations = Location.exampleLocations

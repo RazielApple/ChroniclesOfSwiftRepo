@@ -16,9 +16,12 @@ struct SearchTabView: View {
                         .font(.title)
                     Spacer()
                 }
-                MapView()
-                    .frame(maxHeight: 160)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                NavigationLink(destination: LargeMapView()) {
+                    MapView()
+                        .frame(maxHeight: 160)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
             }
             .padding()
         }
