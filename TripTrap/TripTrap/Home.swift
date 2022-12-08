@@ -12,19 +12,18 @@ struct Home: View {
     @EnvironmentObject var viewModel: ViewModel
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                HStack {
-                    Text("TripTrap")
-                        .font(.title)
-                    Spacer()
+        TabView {
+            SearchTabView()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
                 }
-                MapView()
-                    .frame(maxHeight: 160)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-            }
-            .padding()
+            
+            TripTabView()
+                .tabItem {
+                    Label("Trips", systemImage: "figure.hiking")
+                }
         }
+//        .accentColor(.white)
     }
 }
 

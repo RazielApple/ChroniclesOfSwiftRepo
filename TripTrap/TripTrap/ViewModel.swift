@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 
 class ViewModel: ObservableObject {
-//      I had stuff in here, but it's gone now...
-
+//    TODO: The location manager should be initialised here, but I cannot get it to work if it is. 
+    @Published var locationManager = LocationManager()
 }
 
