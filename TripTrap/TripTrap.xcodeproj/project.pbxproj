@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C006BCD2941FC40000D5113 /* SmallMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCC2941FC40000D5113 /* SmallMapView.swift */; };
+		4C006BCD2941FC40000D5113 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCC2941FC40000D5113 /* MapView.swift */; };
 		4C25C43A294099D2006C0918 /* TripTrapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C439294099D2006C0918 /* TripTrapApp.swift */; };
 		4C25C43C294099D2006C0918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C43B294099D2006C0918 /* ContentView.swift */; };
 		4C25C43E294099D3006C0918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C25C43D294099D3006C0918 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C006BCC2941FC40000D5113 /* SmallMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallMapView.swift; sourceTree = "<group>"; };
+		4C006BCC2941FC40000D5113 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4C25C436294099D2006C0918 /* TripTrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripTrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C25C439294099D2006C0918 /* TripTrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrapApp.swift; sourceTree = "<group>"; };
 		4C25C43B294099D2006C0918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,12 +69,12 @@
 				4C25C439294099D2006C0918 /* TripTrapApp.swift */,
 				4C25C43B294099D2006C0918 /* ContentView.swift */,
 				4C25C44D29409C58006C0918 /* Home.swift */,
-				4C006BCC2941FC40000D5113 /* SmallMapView.swift */,
+				4C006BCC2941FC40000D5113 /* MapView.swift */,
 				4C25C455294122C3006C0918 /* ViewModel.swift */,
 				4C25C457294132D3006C0918 /* LocationManager.swift */,
 				4C25C45129411B20006C0918 /* LocationModel.swift */,
-				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C442294099D3006C0918 /* Persistence.swift */,
+				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C447294099D3006C0918 /* Info.plist */,
 				4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */,
 				4C25C43F294099D3006C0918 /* Preview Content */,
@@ -168,7 +168,7 @@
 				4C25C45229411B20006C0918 /* LocationModel.swift in Sources */,
 				4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */,
 				4C25C456294122C3006C0918 /* ViewModel.swift in Sources */,
-				4C006BCD2941FC40000D5113 /* SmallMapView.swift in Sources */,
+				4C006BCD2941FC40000D5113 /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

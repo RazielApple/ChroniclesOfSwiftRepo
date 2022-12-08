@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit 
 
-struct SmallMapView: View {
+struct MapView: View {
     @StateObject private var locationManager = LocationManager()
     var locations = Location.exampleLocations
     
@@ -31,19 +31,17 @@ struct SmallMapView: View {
                         Text(location.name)
                     } label: {
                         Circle()
-                            .stroke(.red, lineWidth: 3)
+                            .stroke(.gray, lineWidth: 3)
                             .frame(width: 44, height: 44)
                     }
                 }
             }
-                .frame(maxHeight: 160)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
         }
     }
 }
 
 struct SmallMapView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallMapView()
+        MapView()
     }
 }

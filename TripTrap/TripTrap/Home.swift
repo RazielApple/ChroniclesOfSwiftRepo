@@ -19,7 +19,9 @@ struct Home: View {
                         .font(.title)
                     Spacer()
                 }
-                SmallMapView()
+                MapView()
+                    .frame(maxHeight: 160)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
             }
             .padding()
         }
