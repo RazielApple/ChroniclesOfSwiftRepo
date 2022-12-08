@@ -6,11 +6,8 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct Home: View {
-    @EnvironmentObject var viewModel: ViewModel
-    
     var body: some View {
         TabView {
             SearchTabView()
@@ -30,6 +27,5 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
-            .environmentObject(ViewModel())
     }
 }
