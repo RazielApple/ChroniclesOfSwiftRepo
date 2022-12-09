@@ -15,7 +15,7 @@ struct Home: View {
                     Label("Search", systemImage: "magnifyingglass")
                 }
             
-            TripTabView()
+            TripsMainView()
                 .tabItem {
                     Label("Trips", systemImage: "figure.hiking")
                 }
