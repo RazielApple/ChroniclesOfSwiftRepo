@@ -8,10 +8,36 @@
 import SwiftUI
 
 struct TripsMainView: View {
+    
+    @State private var tripState = 0
+    
+    var dummyTripsArrayOne = ["Upcoming Trip 1", "Upcoming Trip 2", "Upcoming Trip 3", "Upcoming Trip 4", "Upcoming Trip 5"]
+    var dummyTripsArrayTwo = ["Previous Trip 1", "Previous Trip 2", "Previous Trip 3", "Previous Trip 4", "Previous Trip 5"]
+    
     var body: some View {
+        
         NavigationStack {
             VStack {
-                Text("Hello Trips")
+                Picker("Your Trips", selection: $tripState, content: {
+                    Text("Upcoming").tag(0)
+                    Text("Previous").tag(1)
+                })
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
+                if tripState == 0 {
+                    List {
+                        ForEach(dummyTripsArrayOne, id: \.self) { upTrip in
+                            Text(upTrip)
+                        }
+                    }
+                } else {
+                    List {
+                        ForEach(dummyTripsArrayTwo, id: \.self) { prevTrip in
+                            Text(prevTrip)
+                        }
+                    }
+                }
             }
             .navigationTitle("Trips")
             .navigationBarTitleDisplayMode(.inline)
