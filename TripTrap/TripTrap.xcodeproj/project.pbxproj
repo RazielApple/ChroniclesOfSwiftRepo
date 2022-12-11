@@ -25,6 +25,7 @@
 		4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881ADF2944B2D100E0B3DF /* CircleImage.swift */; };
 		4C881AE329461E8400E0B3DF /* CreateTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE229461E8400E0B3DF /* CreateTripView.swift */; };
 		4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */; };
+		4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE62946234A00E0B3DF /* SearchbarView.swift */; };
 		AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC945E3A2942CA7A00455E81 /* TripsMainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		4C881ADF2944B2D100E0B3DF /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4C881AE229461E8400E0B3DF /* CreateTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripView.swift; sourceTree = "<group>"; };
 		4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
+		4C881AE62946234A00E0B3DF /* SearchbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarView.swift; sourceTree = "<group>"; };
 		AC945E3A2942CA7A00455E81 /* TripsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				AC945E372942329900455E81 /* Views */,
 				AC945E362942329100455E81 /* Models */,
 				4C881AE12944B2E400E0B3DF /* Helpers */,
+				4C881AE82946235700E0B3DF /* Temporary */,
 				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C447294099D3006C0918 /* Info.plist */,
 				4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */,
@@ -111,6 +114,14 @@
 				4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4C881AE82946235700E0B3DF /* Temporary */ = {
+			isa = PBXGroup;
+			children = (
+				4C881AE62946234A00E0B3DF /* SearchbarView.swift */,
+			);
+			path = Temporary;
 			sourceTree = "<group>";
 		};
 		AC945E362942329100455E81 /* Models */ = {
@@ -254,6 +265,7 @@
 				4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */,
 				4C25C456294122C3006C0918 /* ViewModel.swift in Sources */,
 				4C881AE329461E8400E0B3DF /* CreateTripView.swift in Sources */,
+				4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */,
 				4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */,
 				4C006BCD2941FC40000D5113 /* MapView.swift in Sources */,
 				4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */,

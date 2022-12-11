@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct CreateTripView: View {
+    @State private var searchText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Text("Organise your own trip")
+                .font(.title).bold()
+            SearchbarView(text: $searchText)
+            
+            Form {
+                
+            }
+        }
+        .padding(.top, 30)
+        
+
+
     }
 }
 
