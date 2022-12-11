@@ -49,9 +49,10 @@ struct TripsMainView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("+") {
-                        // TODO: add trips function
+                    Button {
                         isShowingCreateTripSheet = true
+                    } label: {
+                        Image(systemName: "plus")
                     }
                     .sheet(isPresented: $isShowingCreateTripSheet) {
                         CreateTripView()
