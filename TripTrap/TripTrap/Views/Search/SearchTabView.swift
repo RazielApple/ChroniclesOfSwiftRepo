@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchTabView: View {
+    @StateObject var vm = ViewModel()
     var body: some View {
         NavigationStack {
             VStack {
@@ -16,7 +17,6 @@ struct SearchTabView: View {
                         .font(.title)
                     Spacer()
                 }
-
                 NavigationLink(destination: LargeMapView()) {
                     MapView()
                         .frame(maxHeight: 160)
@@ -24,7 +24,11 @@ struct SearchTabView: View {
                 }
             }
             .padding()
-        }
+        }.onAppear{
+            Task{
+                try await vm.fetch()
+            }
+            }
     }
 }
 
