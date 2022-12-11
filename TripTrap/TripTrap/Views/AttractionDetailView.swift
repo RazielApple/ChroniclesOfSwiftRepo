@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct AttractionDetailView: View {
-    let exampleImage: String = "https://http.cat/404"
+    var attraction: Attraction
+    
+    
+//    let exampleImage: String = "https://http.cat/404"
     
     var body: some View {
         GeometryReader { proxy in
@@ -19,32 +22,32 @@ struct AttractionDetailView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: size.height / 2)
+                    .frame(maxWidth: size.width)
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("Attraction Name")
+                        Text(attraction.name)
                             .font(.title)
                             .foregroundColor(.primary)
                     }
                     
                     HStack {
-                        Text("details")
+                        Text(attraction.type)
                         Spacer()
-                        Text("details")
                     }
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     
                     Divider()
                     
-                    Text("About ")
+                    Text("About\n")
                         .font(.title2)
-                    Text("description")
+                    Text(attraction.description)
                 }
                 .padding()
             }
+            .scrollIndicators(.hidden)
         }
-//        .padding()
     }
 }
 
@@ -65,6 +68,6 @@ struct image: View {
 
 struct AttractionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AttractionDetailView()
+        AttractionDetailView(attraction: Attraction.exampleAttraction)
     }
 }
