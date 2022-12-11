@@ -12,16 +12,13 @@ struct AttractionDetailView: View {
     
     var body: some View {
         GeometryReader { proxy in
-//            let size = proxy.size
+            let size = proxy.size
             
             ScrollView {
-                image(imageURL: exampleImage)
-//                    .frame(maxHeight: size.height / 2)
-                
-                CircleImage(image: Image("guinness"))
-                    .frame(maxWidth: 150)
-                    .offset(y: -30)
-                    .padding(.bottom, -40)
+                Image("guinness")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: size.height / 2)
                 
                 VStack(alignment: .leading) {
                     HStack {
