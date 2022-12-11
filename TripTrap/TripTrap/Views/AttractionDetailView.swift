@@ -9,8 +9,7 @@ import SwiftUI
 
 struct AttractionDetailView: View {
     var attraction: Attraction
-    
-    
+
 //    let exampleImage: String = "https://http.cat/404"
     
     var body: some View {
