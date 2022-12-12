@@ -17,11 +17,11 @@ class ViewModel: ObservableObject {
     @MainActor //without main actor, if u try to do line 27, it throws a warning.
                //An alternative solution could be: call fetch in the view that needs the call
                //and assign fetchedData into Attraction variable in the same view
-    func fetch() async throws{
+    func fetch(searchText: String) async throws {
             let postData = NSData(data: "".data(using: String.Encoding.utf8)!)
 
-            let request = NSMutableURLRequest(url: NSURL(string: "https://api.opentripmap.com/0.1/en/places/autosuggest?name=museum&radius=10000&lon=14.26811&lat=40.85216&apikey=5ae2e3f221c38a28845f05b66c319f2c844159541f0810838b11d4db")! as URL,
-                                                    cachePolicy: .useProtocolCachePolicy,
+            let request = NSMutableURLRequest(url: NSURL(string: "https://api.opentripmap.com/0.1/en/places/autosuggest?name=\(searchText)&radius=10000&lon=14.26811&lat=40.85216&apikey=5ae2e3f221c38a28845f05b66c319f2c844159541f0810838b11d4db")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
                                                 timeoutInterval: 10.0)
             request.httpMethod = "GET"
             request.httpBody = postData as Data
@@ -34,12 +34,9 @@ class ViewModel: ObservableObject {
                 let httpResponse = response as? HTTPURLResponse
                   print(httpResponse!)
               }
-               
-                
+
                 let fetchedData = try? JSONDecoder().decode(Attractions.self, from: data!)
-//                let fetchedData = try? Bundle.main.decode([Attractions].self, from: data!)
-                
-                print(fetchedData)
+                print(fetchedData as Any)
             })
 
             dataTask.resume()

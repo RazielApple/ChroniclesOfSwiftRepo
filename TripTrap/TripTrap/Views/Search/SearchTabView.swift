@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct SearchTabView: View {
+    @EnvironmentObject var viewModel: ViewModel
     @State private var searchText = ""
-    
-    var vm = ViewModel()
-    
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 40) {
@@ -25,6 +24,9 @@ struct SearchTabView: View {
                 SearchbarView(text: $searchText)
                     .onSubmit {
                         // Call the search function
+                        Task {
+                            try await viewModel.fetch(searchText: searchText)
+                        }
                     }
 
                 NavigationLink(destination: LargeMapView()) {
@@ -37,11 +39,6 @@ struct SearchTabView: View {
                 Spacer()
             }
         }
-        .onAppear {
-            Task {
-                try await vm.fetch()
-            }
-        }
     }
 }
 
@@ -50,10 +47,3 @@ struct SearchView_Previews: PreviewProvider {
         SearchTabView()
     }
 }
-
-
-//name
-//radius
-//lon
-//lat
-//apikey
