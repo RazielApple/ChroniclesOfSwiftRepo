@@ -36,13 +36,17 @@ extension ViewModel {
                 let httpResponse = response as? HTTPURLResponse
                   print(httpResponse!)
               }
+                
 
                 let fetchedData = try? JSONDecoder().decode(Attractions.self, from: data!)
                 
                 if let featuresArray = fetchedData?.features {
-                    self.attractionsList = featuresArray
-    //                print(self.attractionsList)
+                    DispatchQueue.main.async {
+                        self.attractionsList = featuresArray
+                        //                print(self.attractionsList)
+                    }
                 }
+                
                 
             })
 
