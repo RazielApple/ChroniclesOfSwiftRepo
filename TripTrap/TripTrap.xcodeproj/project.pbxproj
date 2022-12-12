@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C006BCD2941FC40000D5113 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCC2941FC40000D5113 /* MapView.swift */; };
 		4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCE29420A32000D5113 /* SearchTabView.swift */; };
-		4C006BD329420FE5000D5113 /* AttractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BD229420FE5000D5113 /* AttractionModel.swift */; };
+		4C006BD329420FE5000D5113 /* AttractionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BD229420FE5000D5113 /* AttractionsModel.swift */; };
 		4C0C8FF329422B520002432F /* LargeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C8FF229422B520002432F /* LargeMapView.swift */; };
 		4C25C43A294099D2006C0918 /* TripTrapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C439294099D2006C0918 /* TripTrapApp.swift */; };
 		4C25C43C294099D2006C0918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C43B294099D2006C0918 /* ContentView.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		4C006BCC2941FC40000D5113 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4C006BCE29420A32000D5113 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
-		4C006BD229420FE5000D5113 /* AttractionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionModel.swift; sourceTree = "<group>"; };
+		4C006BD229420FE5000D5113 /* AttractionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsModel.swift; sourceTree = "<group>"; };
 		4C0C8FF229422B520002432F /* LargeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeMapView.swift; sourceTree = "<group>"; };
 		4C25C436294099D2006C0918 /* TripTrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripTrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C25C439294099D2006C0918 /* TripTrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrapApp.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			children = (
 				4C25C455294122C3006C0918 /* ViewModel.swift */,
 				4C25C45129411B20006C0918 /* LocationModel.swift */,
-				4C006BD229420FE5000D5113 /* AttractionModel.swift */,
+				4C006BD229420FE5000D5113 /* AttractionsModel.swift */,
 				4CF969412947161500B5B4D3 /* TripModel.swift */,
 			);
 			path = Models;
@@ -259,7 +259,7 @@
 				4C25C443294099D3006C0918 /* Persistence.swift in Sources */,
 				4C881ADE2944921100E0B3DF /* AttractionDetailView.swift in Sources */,
 				4C25C43C294099D2006C0918 /* ContentView.swift in Sources */,
-				4C006BD329420FE5000D5113 /* AttractionModel.swift in Sources */,
+				4C006BD329420FE5000D5113 /* AttractionsModel.swift in Sources */,
 				4C25C44E29409C58006C0918 /* Home.swift in Sources */,
 				AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */,
 				4C25C43A294099D2006C0918 /* TripTrapApp.swift in Sources */,
