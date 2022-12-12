@@ -250,7 +250,7 @@ struct Unknown: Codable {
               struct Value: Codable {
                 let latitude: Double
                 let longitude: Double
-                let altitude: Any?
+//                let altitude: Any?
                 let precision: Double
                 let globe: URL
               }
@@ -3590,105 +3590,105 @@ struct Unknown: Codable {
         struct Bgwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Dewiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Enwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Eswiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Fawiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Frwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Huwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Itwiki: Codable {
           let site: String
           let title: String
-          let badges: [String]
+//          let badges: [String]
           let url: URL
         }
 
         struct Kawiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Napwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Nlwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Ptwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Ruwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Tlwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
         struct Zhwiki: Codable {
           let site: String
           let title: String
-          let badges: [Any]
+//          let badges: [Any]
           let url: URL
         }
 
