@@ -11,12 +11,8 @@ import MapKit
 class ViewModel: ObservableObject {
     //    TODO: The location manager should be initialised here, but I cannot get it to work if it is.
 //    @Published var locationManager = LocationManager()
-    @Published var attrac: Attractions? = nil //just used to see if it works
+    @Published var attractionsList: Attractions?
 
-    
-    @MainActor //without main actor, if u try to do line 27, it throws a warning.
-               //An alternative solution could be: call fetch in the view that needs the call
-               //and assign fetchedData into Attraction variable in the same view
     func fetch(searchText: String) async throws {
             let postData = NSData(data: "".data(using: String.Encoding.utf8)!)
 
@@ -36,6 +32,7 @@ class ViewModel: ObservableObject {
               }
 
                 let fetchedData = try? JSONDecoder().decode(Attractions.self, from: data!)
+                self.attractionsList = fetchedData
                 print(fetchedData as Any)
             })
 

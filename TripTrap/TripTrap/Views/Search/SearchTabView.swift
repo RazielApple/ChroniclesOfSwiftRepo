@@ -23,7 +23,6 @@ struct SearchTabView: View {
                 
                 SearchbarView(text: $searchText)
                     .onSubmit {
-                        // Call the search function
                         Task {
                             try await viewModel.fetch(searchText: searchText)
                         }
@@ -37,6 +36,14 @@ struct SearchTabView: View {
                 }
                 
                 Spacer()
+                
+                if viewModel.attractionsList != nil {
+//                    List {
+//                       Text(item.features.properties.name)
+//                    }
+                }
+                
+                
             }
         }
     }
