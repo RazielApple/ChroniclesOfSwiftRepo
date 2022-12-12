@@ -50,6 +50,7 @@ struct SearchTabView: View {
                             }
                         }
                     }
+//                    .listStyle(.sidebar)
                 }
                 Spacer()
 

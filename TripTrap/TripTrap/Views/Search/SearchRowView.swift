@@ -11,7 +11,23 @@ struct SearchRowView: View {
     var feature: Feature
     
     var body: some View {
-        Text(feature.properties.name)
+        VStack(alignment: .leading) {
+            HStack {
+                CircleImage(image: Image("guinness"))
+                VStack(alignment: .leading)  {
+                    Text(feature.properties.name)
+                        .font(.title3)
+                        .layoutPriority(1)
+                    Text(feature.properties.wikidata)
+                    
+                }
+                Spacer()
+            }
+            .frame(height: 60)
+        }
+        
+        
+        
     }
 }
 

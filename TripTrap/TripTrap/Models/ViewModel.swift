@@ -39,9 +39,11 @@ extension ViewModel {
 
                 let fetchedData = try? JSONDecoder().decode(Attractions.self, from: data!)
                 
-                let featuresArray = fetchedData?.features
-                self.attractionsList = featuresArray!
-//                print(self.attractionsList)
+                if let featuresArray = fetchedData?.features {
+                    self.attractionsList = featuresArray
+    //                print(self.attractionsList)
+                }
+                
             })
 
             dataTask.resume()
