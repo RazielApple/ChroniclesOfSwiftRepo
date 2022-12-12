@@ -16,7 +16,7 @@ struct SearchRowView: View {
                 CircleImage(image: Image("guinness"))
                 VStack(alignment: .leading)  {
                     Text(feature.properties.name)
-                        .font(.title3)
+                        .font(.headline)
                         .layoutPriority(1)
                     Text(feature.properties.wikidata)
                     
