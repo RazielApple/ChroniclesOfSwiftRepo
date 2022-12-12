@@ -18,6 +18,7 @@ struct SearchTabView: View {
                         .font(.title)
                     Spacer()
                 }
+                .padding()
                 
                 SearchbarView(text: $searchText)
 
@@ -25,11 +26,11 @@ struct SearchTabView: View {
                     MapView()
                         .frame(maxHeight: 160)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .padding()
                 }
                 
                 Spacer()
             }
-            .padding()
         }
     }
 }
