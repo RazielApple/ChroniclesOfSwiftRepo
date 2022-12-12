@@ -11,12 +11,14 @@ import SwiftUI
 struct TripTrapApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject var viewModel = ViewModel()
+    @StateObject var locationManager = LocationManager()
     
     var body: some Scene {
         WindowGroup {
             Home()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(viewModel)
+                .environmentObject(locationManager)
         }
     }
 }

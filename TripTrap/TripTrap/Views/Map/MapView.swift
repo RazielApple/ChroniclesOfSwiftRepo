@@ -9,9 +9,7 @@ import SwiftUI
 import MapKit 
 
 struct MapView: View {
-    @StateObject private var locationManager = LocationManager()
-//    Check the ViewModel for the TODO.
-//    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var locationManager: LocationManager
     
     var locations = Location.exampleLocations
     
