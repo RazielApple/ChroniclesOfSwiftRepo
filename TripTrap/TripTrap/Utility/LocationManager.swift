@@ -35,7 +35,7 @@ extension LocationManager: CLLocationManagerDelegate {
 extension MKCoordinateRegion {
     
     static func guinnessStorehouse() -> MKCoordinateRegion {
-        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.341648, longitude:  -6.286763), latitudinalMeters: 5000, longitudinalMeters: 5000)
+        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.341648, longitude:  -6.286763), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     }
     
     func getBinding() -> Binding<MKCoordinateRegion>? {

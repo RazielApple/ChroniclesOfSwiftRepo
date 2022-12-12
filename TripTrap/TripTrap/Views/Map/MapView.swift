@@ -20,7 +20,7 @@ struct MapView: View {
             return MKCoordinateRegion.guinnessStorehouse().getBinding()
         }
         
-        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        let region = MKCoordinateRegion(center: location.coordinate, span:  MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         
         return region.getBinding()
     }

@@ -9,7 +9,7 @@ import Foundation
 
 struct Trip: Codable, Identifiable {
     var id = UUID()
-    var featurs: Feature
+    var features: Feature
     
     var date: Date
     

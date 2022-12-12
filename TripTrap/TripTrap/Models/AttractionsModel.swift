@@ -12,7 +12,7 @@ import MapKit
 
     // MARK: - Welcome
 struct Attractions: Identifiable, Codable {
-    var id = UUID().uuidString
+    let id = UUID().uuidString
     
     let type: String
     let features: [Feature]

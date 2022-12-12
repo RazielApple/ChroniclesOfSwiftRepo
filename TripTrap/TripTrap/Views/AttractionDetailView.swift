@@ -65,8 +65,8 @@ struct image: View {
     }
 }
 
-struct AttractionDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        AttractionDetailView(attractions: Attractions.exampleAttractions)
-    }
-}
+//struct AttractionDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AttractionDetailView(attractions: Attractions.exampleAttractions)
+//    }
+//}
