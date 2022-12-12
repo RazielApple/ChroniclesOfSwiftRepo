@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AttractionDetailView: View {
-    var attraction: Attraction
+    var attractions: Attractions
 
 //    let exampleImage: String = "https://http.cat/404"
     
@@ -25,13 +25,13 @@ struct AttractionDetailView: View {
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        Text(attraction.name)
+                        Text(attractions.features[0].properties.name)
                             .font(.title)
                             .foregroundColor(.primary)
                     }
                     
                     HStack {
-                        Text(attraction.type)
+                        Text(attractions.features[0].type)
                         Spacer()
                     }
                     .font(.subheadline)
@@ -41,7 +41,7 @@ struct AttractionDetailView: View {
                     
                     Text("About\n")
                         .font(.title2)
-                    Text(attraction.description)
+                    Text(attractions.features[0].properties.wikidata)
                 }
                 .padding()
             }
@@ -67,6 +67,6 @@ struct image: View {
 
 struct AttractionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AttractionDetailView(attraction: Attraction.exampleAttraction)
+        AttractionDetailView(attractions: Attractions.exampleAttractions)
     }
 }

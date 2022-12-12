@@ -11,7 +11,7 @@ import MapKit
 class ViewModel: ObservableObject {
     //    TODO: The location manager should be initialised here, but I cannot get it to work if it is.
     //    @Published var locationManager = LocationManager()
-    @Published var attrac: Attraction? = nil //just used to see if it works
+    @Published var attrac: Attractions? = nil //just used to see if it works
 
     
     @MainActor //without main actor, if u try to do line 27, it throws a warning.
@@ -23,7 +23,7 @@ class ViewModel: ObservableObject {
         var request: URLRequest = URLRequest(url: urlString)
         request.httpMethod = "GET"
         let (data,_) = try await URLSession.shared.data(for: request)
-        let fetchedData = try JSONDecoder().decode(Attraction.self, from: data)
+        let fetchedData = try JSONDecoder().decode(Attractions.self, from: data)
         attrac = fetchedData
     }
 
