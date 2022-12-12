@@ -92,7 +92,6 @@
 				AC945E372942329900455E81 /* Views */,
 				AC945E362942329100455E81 /* Models */,
 				4C881AE12944B2E400E0B3DF /* Helpers */,
-				4C881AE82946235700E0B3DF /* Temporary */,
 				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C447294099D3006C0918 /* Info.plist */,
 				4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */,
@@ -116,14 +115,6 @@
 				4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		4C881AE82946235700E0B3DF /* Temporary */ = {
-			isa = PBXGroup;
-			children = (
-				4C881AE62946234A00E0B3DF /* SearchbarView.swift */,
-			);
-			path = Temporary;
 			sourceTree = "<group>";
 		};
 		AC945E362942329100455E81 /* Models */ = {
@@ -180,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				4C006BCE29420A32000D5113 /* SearchTabView.swift */,
+				4C881AE62946234A00E0B3DF /* SearchbarView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
