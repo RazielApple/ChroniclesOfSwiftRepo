@@ -10,6 +10,8 @@ import SwiftUI
 struct SearchTabView: View {
     @EnvironmentObject var viewModel: ViewModel
     @State private var searchText = ""
+    
+    @State private var currentAttractionList: [Feature] = []
 
     var body: some View {
         NavigationStack {
@@ -25,6 +27,8 @@ struct SearchTabView: View {
                     .onSubmit {
                         Task {
                             try await viewModel.fetch(searchText: searchText)
+                            currentAttractionList = viewModel.attractionsList ?? []
+                            print(currentAttractionList)
                         }
                     }
 
@@ -37,11 +41,15 @@ struct SearchTabView: View {
                 
                 Spacer()
                 
-                if viewModel.attractionsList != nil {
-//                    List {
-//                       Text(item.features.properties.name)
-//                    }
+                if !currentAttractionList.isEmpty {
+                    List {
+                        ForEach(currentAttractionList, id: \.self.id) { item in
+                            Text(item.properties.name)
+                        }
+                    }
                 }
+                
+                Text("Testing")
                 
                 
             }
