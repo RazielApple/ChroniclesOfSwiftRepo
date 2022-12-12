@@ -13,6 +13,11 @@ class ViewModel: ObservableObject {
 //    @Published var locationManager = LocationManager()
     @Published var attractionsList: [Feature] = []
 
+ 
+}
+
+extension ViewModel {
+    
     @MainActor
     func fetch(searchText: String) async throws {
             let postData = NSData(data: "".data(using: String.Encoding.utf8)!)
@@ -41,7 +46,5 @@ class ViewModel: ObservableObject {
 
             dataTask.resume()
         }
-
-    
 }
 

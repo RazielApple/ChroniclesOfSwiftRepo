@@ -15,7 +15,7 @@ struct SearchTabView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 40) {
+            VStack {
                 HStack {
                     Text("TripTrap")
                         .font(.title)
@@ -25,13 +25,12 @@ struct SearchTabView: View {
                 
                 SearchbarView(text: $searchText)
                     .onSubmit {
+                        var submitText = searchText
                         if searchText.contains(" ") {
-                            searchText.replace(" ", with: "%20")
+                            submitText.replace(" ", with: "%20")
                         }
-                            
-                        
                         Task {
-                            try await viewModel.fetch(searchText: searchText)
+                            try await viewModel.fetch(searchText: submitText)
                         }
                     }
 
