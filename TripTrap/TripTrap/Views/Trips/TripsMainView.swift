@@ -44,8 +44,61 @@ struct TripsMainView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Edit") {
-                        // TODO: edit trips function
+                    Menu {
+                        Section {
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Created by you") },
+                                icon: {Image(systemName: "person")})
+                            })
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Created by others") },
+                                icon: {Image(systemName: "person.3")})
+                            })
+                        }
+                        
+                        Menu {
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Last Created") },
+                                icon: {Image(systemName: "stopwatch")})
+                            })
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Name") },
+                                icon: {Image(systemName: "textformat")})
+                            })
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Date") },
+                                icon: {Image(systemName: "calendar")})
+                            })
+                            Button(action: {}, label: {
+                                Label(
+                                title: { Text("Price") },
+                                icon: {Image(systemName: "dollarsign.circle")})
+                            })
+                        } label: {
+                            Text("Sort By")
+                        }
+                        
+//                        Section {
+//                            Button(action: {}, label: {
+//                                Text("Last Created")
+//                            })
+//                            Button(action: {}, label: {
+//                                Text("Name")
+//                            })
+//                            Button(action: {}, label: {
+//                                Text("Date")
+//                            })
+//                        }
+                        
+                    } label: {
+                        Label(
+                        title: { Text("Sort") },
+                        icon: {Image(systemName: "line.3.horizontal.decrease.circle")})
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
