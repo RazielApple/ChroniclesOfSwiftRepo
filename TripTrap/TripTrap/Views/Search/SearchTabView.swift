@@ -11,7 +11,7 @@ struct SearchTabView: View {
     @EnvironmentObject var viewModel: ViewModel
     @State private var searchText = ""
     
-    @State private var currentAttractionList: [Feature] = []
+//    @State private var currentAttractionList: [Feature] = []
 
     var body: some View {
         NavigationStack {
@@ -25,10 +25,13 @@ struct SearchTabView: View {
                 
                 SearchbarView(text: $searchText)
                     .onSubmit {
+                        if searchText.contains(" ") {
+                            searchText.replace(" ", with: "%20")
+                        }
+                            
+                        
                         Task {
                             try await viewModel.fetch(searchText: searchText)
-                            currentAttractionList = viewModel.attractionsList ?? []
-                            print(currentAttractionList)
                         }
                     }
 
@@ -39,19 +42,18 @@ struct SearchTabView: View {
                         .padding()
                 }
                 
-                Spacer()
                 
-                if !currentAttractionList.isEmpty {
+                if !viewModel.attractionsList.isEmpty {
                     List {
-                        ForEach(currentAttractionList, id: \.self.id) { item in
-                            Text(item.properties.name)
+                        ForEach(viewModel.attractionsList, id: \.self.id) { item in
+                            NavigationLink(destination: AttractionDetailView(attractions: item)) {
+                                SearchRowView(feature: item)
+                            }
                         }
                     }
                 }
-                
-                Text("Testing")
-                
-                
+                Spacer()
+
             }
         }
     }

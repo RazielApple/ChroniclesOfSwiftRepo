@@ -56,4 +56,8 @@ extension Attractions {
                                                 properties: Properties(xid: "Q3868276", name: "Diocesan Museum of Naples", dist: 818.40216943, rate: 3, wikidata: "Q3868276", kinds: "museums,cultural,interesting_places,art_galleries"))]
     )
     
+    static let exampleFeature = Feature(type: "Feature",
+                                        id: "14690932",
+                                        geometry: Geometry(type: "Point", coordinates: [14.2586927, 40.8539429]),
+                                        properties: Properties(xid: "Q3868276", name: "Diocesan Museum of Naples", dist: 818.40216943, rate: 3, wikidata: "Q3868276", kinds: "museums,cultural,interesting_places,art_galleries"))
 }

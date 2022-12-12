@@ -11,7 +11,7 @@ import MapKit
 class ViewModel: ObservableObject {
     //    TODO: The location manager should be initialised here, but I cannot get it to work if it is.
 //    @Published var locationManager = LocationManager()
-    @Published var attractionsList: [Feature]? = []
+    @Published var attractionsList: [Feature] = []
 
     @MainActor
     func fetch(searchText: String) async throws {
@@ -35,8 +35,8 @@ class ViewModel: ObservableObject {
                 let fetchedData = try? JSONDecoder().decode(Attractions.self, from: data!)
                 
                 let featuresArray = fetchedData?.features
-                self.attractionsList = featuresArray
-                print(fetchedData as Any)
+                self.attractionsList = featuresArray!
+//                print(self.attractionsList)
             })
 
             dataTask.resume()
