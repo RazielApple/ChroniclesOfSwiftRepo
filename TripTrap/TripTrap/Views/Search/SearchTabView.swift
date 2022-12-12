@@ -11,14 +11,13 @@ struct SearchTabView: View {
     @EnvironmentObject var viewModel: ViewModel
     @State private var searchText = ""
     
-//    @State private var currentAttractionList: [Feature] = []
-
     var body: some View {
         NavigationStack {
             VStack {
                 HStack {
                     Text("TripTrap")
                         .font(.title)
+                        .bold()
                     Spacer()
                 }
                 .padding()
