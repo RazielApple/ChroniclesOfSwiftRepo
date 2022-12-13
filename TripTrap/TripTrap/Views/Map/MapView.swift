@@ -9,7 +9,8 @@ import SwiftUI
 import MapKit 
 
 struct MapView: View {
-    @EnvironmentObject var locationManager: LocationManager
+//    @EnvironmentObject var locationManager: LocationManager
+    @StateObject var locationManager = LocationManager()
     
     var locations = Location.exampleLocations
     
@@ -44,5 +45,6 @@ struct MapView: View {
 struct SmallMapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
+//            .environmentObject(LocationManager())
     }
 }

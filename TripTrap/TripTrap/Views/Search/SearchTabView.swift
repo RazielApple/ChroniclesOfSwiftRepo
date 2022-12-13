@@ -31,8 +31,8 @@ struct SearchTabView: View {
                         Task {
                             try await viewModel.fetch(searchText: submitText)
                         }
-                        
                     }
+                    
 
                 NavigationLink(destination: LargeMapView()) {
                     MapView()
@@ -62,5 +62,6 @@ struct SearchTabView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchTabView()
+            .environmentObject(ViewModel())
     }
 }
