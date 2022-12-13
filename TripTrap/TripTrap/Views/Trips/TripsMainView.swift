@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TripsMainView: View {
     
-    @State private var tripState = 0
+    @State var isUpcomingTrip = true
     @State private var isShowingCreateTripSheet: Bool = false
     
     var dummyTripsArrayOne = ["Upcoming Trip 1", "Upcoming Trip 2", "Upcoming Trip 3", "Upcoming Trip 4", "Upcoming Trip 5"]
@@ -19,17 +19,21 @@ struct TripsMainView: View {
         
         NavigationStack {
             VStack {
-                Picker("Your Trips", selection: $tripState, content: {
-                    Text("Upcoming").tag(0)
-                    Text("Previous").tag(1)
+                Picker("Your Trips", selection: $isUpcomingTrip, content: {
+                    Text("Upcoming").tag(true)
+                    Text("Previous").tag(false)
                 })
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
                 
-                if tripState == 0 {
+                if isUpcomingTrip == true {
                     List {
                         ForEach(dummyTripsArrayOne, id: \.self) { upTrip in
-                            Text(upTrip)
+                            NavigationLink {
+                                TripsDetailsView()
+                            } label: {
+                                TripsRowView()
+                            }
                         }
                     }
                 } else {

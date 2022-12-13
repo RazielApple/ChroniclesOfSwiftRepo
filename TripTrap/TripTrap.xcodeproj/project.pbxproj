@@ -30,6 +30,8 @@
 		4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE62946234A00E0B3DF /* SearchbarView.swift */; };
 		4CF969422947161500B5B4D3 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF969412947161500B5B4D3 /* TripModel.swift */; };
 		AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC945E3A2942CA7A00455E81 /* TripsMainView.swift */; };
+		ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856B2948798F002F5006 /* TripsRowView.swift */; };
+		ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		4C881AE62946234A00E0B3DF /* SearchbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarView.swift; sourceTree = "<group>"; };
 		4CF969412947161500B5B4D3 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		AC945E3A2942CA7A00455E81 /* TripsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsMainView.swift; sourceTree = "<group>"; };
+		ACC5856B2948798F002F5006 /* TripsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRowView.swift; sourceTree = "<group>"; };
+		ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 			children = (
 				AC945E3A2942CA7A00455E81 /* TripsMainView.swift */,
 				4C881AE229461E8400E0B3DF /* CreateTripView.swift */,
+				ACC5856B2948798F002F5006 /* TripsRowView.swift */,
+				ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			files = (
 				4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */,
 				4CF969422947161500B5B4D3 /* TripModel.swift in Sources */,
+				ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */,
 				4C731DBA294782240001038C /* SearchRowView.swift in Sources */,
 				4C25C443294099D3006C0918 /* Persistence.swift in Sources */,
 				4C731DB82947748E0001038C /* WikipediaModel.swift in Sources */,
@@ -272,6 +279,7 @@
 				4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */,
 				4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */,
 				4C006BCD2941FC40000D5113 /* MapView.swift in Sources */,
+				ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */,
 				4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
