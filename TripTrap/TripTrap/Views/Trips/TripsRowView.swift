@@ -16,7 +16,7 @@ struct TripsRowView: View {
         VStack(alignment: .leading) {
 
             HStack {
-                CircleImage(image: Image("guinness"))
+                CircleImage(image: Image("castle"))
                     .frame(height: 80)
                 VStack(alignment: .leading)  {
                     Text("Castle Nuovo")

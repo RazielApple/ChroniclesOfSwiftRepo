@@ -32,6 +32,7 @@
 		AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC945E3A2942CA7A00455E81 /* TripsMainView.swift */; };
 		ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856B2948798F002F5006 /* TripsRowView.swift */; };
 		ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */; };
+		ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		AC945E3A2942CA7A00455E81 /* TripsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsMainView.swift; sourceTree = "<group>"; };
 		ACC5856B2948798F002F5006 /* TripsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRowView.swift; sourceTree = "<group>"; };
 		ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailsView.swift; sourceTree = "<group>"; };
+		ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsInfoChipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				4C881AE229461E8400E0B3DF /* CreateTripView.swift */,
 				ACC5856B2948798F002F5006 /* TripsRowView.swift */,
 				ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */,
+				ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4C006BCD2941FC40000D5113 /* MapView.swift in Sources */,
 				ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */,
 				4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */,
+				ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
