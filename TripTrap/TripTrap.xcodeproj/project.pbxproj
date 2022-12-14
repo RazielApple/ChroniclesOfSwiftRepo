@@ -33,6 +33,8 @@
 		ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856B2948798F002F5006 /* TripsRowView.swift */; };
 		ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */; };
 		ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */; };
+		ACC585722949BCC0002F5006 /* NewTripPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC585712949BCC0002F5006 /* NewTripPlanView.swift */; };
+		ACC585762949DC85002F5006 /* TripDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC585752949DC85002F5006 /* TripDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		ACC5856B2948798F002F5006 /* TripsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRowView.swift; sourceTree = "<group>"; };
 		ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailsView.swift; sourceTree = "<group>"; };
 		ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsInfoChipView.swift; sourceTree = "<group>"; };
+		ACC585712949BCC0002F5006 /* NewTripPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripPlanView.swift; sourceTree = "<group>"; };
+		ACC585752949DC85002F5006 /* TripDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				ACC5856B2948798F002F5006 /* TripsRowView.swift */,
 				ACC5856D2948C0C9002F5006 /* TripsDetailsView.swift */,
 				ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */,
+				ACC585712949BCC0002F5006 /* NewTripPlanView.swift */,
+				ACC585752949DC85002F5006 /* TripDatePicker.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 				4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */,
 				4CF969422947161500B5B4D3 /* TripModel.swift in Sources */,
 				ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */,
+				ACC585722949BCC0002F5006 /* NewTripPlanView.swift in Sources */,
 				4C731DBA294782240001038C /* SearchRowView.swift in Sources */,
 				4C25C443294099D3006C0918 /* Persistence.swift in Sources */,
+				ACC585762949DC85002F5006 /* TripDatePicker.swift in Sources */,
 				4C731DB82947748E0001038C /* WikipediaModel.swift in Sources */,
 				4C881ADE2944921100E0B3DF /* AttractionDetailView.swift in Sources */,
 				4C25C43C294099D2006C0918 /* ContentView.swift in Sources */,

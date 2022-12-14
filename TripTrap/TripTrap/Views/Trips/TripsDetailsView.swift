@@ -23,7 +23,7 @@ struct TripsDetailsView: View {
                     .fontWeight(.bold)
                 Grid {
                     GridRow {
-                        TripsInfoChipView("40", systemImage: "person")
+                        TripsInfoChipView("5", systemImage: "person")
                         Spacer()
                         TripsInfoChipView("13/Dec/2022", systemImage: "calendar")
                         Spacer()
@@ -35,9 +35,22 @@ struct TripsDetailsView: View {
             .listRowBackground(Color.clear)
             
             Section {
+                Text("40")
+            } header: {
+                Text("Maximum People Allowed")
+            }
+            
+            Section {
+                Text("Piazza Municipio")
+            } header: {
+                Text("Meeting Point")
+            }
+
+            
+            Section {
                 Text("Lorem ipsum dolor sit amet, et quo facete sadipscing, cu verterem concludaturque vis. Id modus aliquam est. Mel id autem scripta, est vide denique invidunt te, quo erroribus sadipscing ea. Viris insolens sea ei. Qui in imperdiet moderatius, habeo regione disputando te eos. \n \n Lorem ipsum dolor sit amet, et quo facete sadipscing, cu verterem concludaturque vis. Id modus aliquam est. Mel id autem scripta, est vide denique invidunt te, quo erroribus sadipscing ea. Viris insolens sea ei. Qui in imperdiet moderatius, habeo regione disputando te eos.")
             } header: {
-                Text("History of the Attraction")
+                Text("About the Trip")
             }
             
             HStack {

@@ -105,16 +105,16 @@ struct TripsMainView: View {
                         icon: {Image(systemName: "line.3.horizontal.decrease.circle")})
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        isShowingCreateTripSheet = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    .sheet(isPresented: $isShowingCreateTripSheet) {
-                        CreateTripView()
-                    }
-                }
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button {
+//                        isShowingCreateTripSheet = true
+//                    } label: {
+//                        Image(systemName: "plus")
+//                    }
+//                    .sheet(isPresented: $isShowingCreateTripSheet) {
+//                        CreateTripView()
+//                    }
+//                }
                 
             }
         }
