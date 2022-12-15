@@ -41,11 +41,12 @@ extension ViewModel {
                 if let featuresArray = fetchedData?.features {
                     DispatchQueue.main.async {
                         self.attractionsList = featuresArray
-                        //                print(self.attractionsList)
                     }
                 }
             })
             dataTask.resume()
         }
+    
+    
 }
 
