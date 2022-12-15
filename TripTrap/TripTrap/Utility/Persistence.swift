@@ -7,6 +7,8 @@
 
 import CoreData
 
+var vm = PersistenceController()
+
 class PersistenceController: ObservableObject {
 
 //    let container: NSPersistentCloudKitContainer
@@ -44,7 +46,7 @@ class PersistenceController: ObservableObject {
          localContainer = NSPersistentContainer(name: "TripTapContainer")
          localContainer.loadPersistentStores { (description, error) in
              if let error = error{
-                 print("EEROR LOADING CORE DATA. \(error)")
+                 print("ERROR LOADING CORE DATA. \(error)")
              }
              else{
                  print("Successfully loaded core data!")
@@ -56,20 +58,20 @@ class PersistenceController: ObservableObject {
      func fetchTrip(){
          let request = NSFetchRequest<TripEntity>(entityName: "TripEntity")
          
-         do{
+         do {
              savedEntities = try localContainer.viewContext.fetch(request)
-         }catch let error{
+         } catch let error{
              print("Error fetching. \(error)")
          }
      }
      
-    func addTrip(name: String, meetingPoint: String, price: Double, detail: String, maxPartecipants: Int, date: Date){
+    func addTrip(name: String, meetingPoint: String, price: Double, detail: String, maxPeople: Int, date: Date) {
          let newTrip = TripEntity(context: localContainer.viewContext)
         newTrip.name = name
         newTrip.meetingPoint = meetingPoint
         newTrip.price = price
         newTrip.detail = detail
-        newTrip.maxParticipants = Int32(maxPartecipants)
+        newTrip.maxPeople = Int32(maxPeople)
         newTrip.date = date
          saveData()
      }
@@ -98,11 +100,7 @@ class PersistenceController: ObservableObject {
              print("Error saving. \(error)")
          }
      }
-     
-     
-     
-     
  }
 
- var vm = PersistenceController()
+
 

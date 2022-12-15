@@ -74,12 +74,32 @@ struct NewTripPlanView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
                         //TODO: write save call
-                    }.disabled(
-                        tripName.isEmpty || tripPrice.isEmpty || maxPeople.isEmpty || meetingPoint.isEmpty || tripDescription.isEmpty
-                    )
+                        addTrip()
+                    }
+//                    .disabled(
+//                        tripName.isEmpty || tripPrice.isEmpty || maxPeople.isEmpty || meetingPoint.isEmpty || tripDescription.isEmpty
+//                    )
                 }
             }
         }
+    }
+    
+    func addTrip() {
+        // Yes, this check makes no sense... Will fix later
+        if (tripName.isEmpty || tripPrice.isEmpty || maxPeople.isEmpty || meetingPoint.isEmpty || tripDescription.isEmpty) {
+            return
+        } else {
+            vm.addTrip(name: tripName,
+                       meetingPoint: meetingPoint,
+                       price: tripPrice == "" ? Double(tripPrice)! : 0,
+                       detail: tripDescription,
+                       maxPeople: maxPeople == "" ? Int(maxPeople)! : 10,
+                       date: selectedTripDate)
+            for item in vm.savedEntities {
+                print(item.name ?? "fail")
+            }
+        }
+        
     }
 }
 
