@@ -101,12 +101,12 @@ class PersistenceController: ObservableObject {
          }
      }
     
-    func updateTrip(oldEntity: TripEntity, name: String, meetingPoint: String, price: Double, detail: String, maxParticipants: Int, date: Date){
+    func updateTrip(oldEntity: TripEntity, name: String, meetingPoint: String, price: Double, detail: String, maxPeople: Int, date: Date){
          oldEntity.name = name
          oldEntity.meetingPoint = meetingPoint
          oldEntity.price = price
          oldEntity.detail = detail
-         oldEntity.maxParticipants = Int32(maxParticipants)
+         oldEntity.maxPeople = Int32(maxPeople)
          oldEntity.date = date
          
          saveData()
