@@ -43,6 +43,7 @@ struct UpcomingTrip: View {
             }
         }
         .scrollIndicators(.hidden)
+        .listStyle(.plain)
     }
 }
 
@@ -65,6 +66,7 @@ struct PreviousTrip: View {
             }
         }
         .scrollIndicators(.hidden)
+        .listStyle(.plain)
     }
 }
 
