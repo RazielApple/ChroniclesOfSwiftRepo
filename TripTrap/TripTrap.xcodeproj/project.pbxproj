@@ -35,6 +35,7 @@
 		ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */; };
 		ACC585722949BCC0002F5006 /* NewTripPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC585712949BCC0002F5006 /* NewTripPlanView.swift */; };
 		ACC585762949DC85002F5006 /* TripDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC585752949DC85002F5006 /* TripDatePicker.swift */; };
+		ACC58578294A64F2002F5006 /* TripsListDummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC58577294A64F2002F5006 /* TripsListDummyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsInfoChipView.swift; sourceTree = "<group>"; };
 		ACC585712949BCC0002F5006 /* NewTripPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripPlanView.swift; sourceTree = "<group>"; };
 		ACC585752949DC85002F5006 /* TripDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatePicker.swift; sourceTree = "<group>"; };
+		ACC58577294A64F2002F5006 /* TripsListDummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListDummyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				ACC5856F2948C4D7002F5006 /* TripsInfoChipView.swift */,
 				ACC585712949BCC0002F5006 /* NewTripPlanView.swift */,
 				ACC585752949DC85002F5006 /* TripDatePicker.swift */,
+				ACC58577294A64F2002F5006 /* TripsListDummyView.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */,
 				4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */,
 				4C006BCD2941FC40000D5113 /* MapView.swift in Sources */,
+				ACC58578294A64F2002F5006 /* TripsListDummyView.swift in Sources */,
 				ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */,
 				4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */,
 				ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */,

@@ -27,21 +27,29 @@ struct TripsMainView: View {
                 .padding()
                 
                 if isUpcomingTrip == true {
-                    List {
-                        ForEach(dummyTripsArrayOne, id: \.self) { upTrip in
-                            NavigationLink {
-                                TripsDetailsView()
-                            } label: {
-                                TripsRowView()
-                            }
-                        }
-                    }
+                    
+                    //dummy temp data
+                    UpcomingTrip()
+                    
+//                    List {
+//                        ForEach(dummyTripsArrayOne, id: \.self) { upTrip in
+//                            NavigationLink {
+//                                TripsDetailsView()
+//                            } label: {
+//                                TripsRowView()
+//                            }
+//                        }
+//                    }
                 } else {
-                    List {
-                        ForEach(dummyTripsArrayTwo, id: \.self) { prevTrip in
-                            Text(prevTrip)
-                        }
-                    }
+                    
+                    //dummy temp data
+                    PreviousTrip()
+                    
+//                    List {
+//                        ForEach(dummyTripsArrayTwo, id: \.self) { prevTrip in
+//                            Text(prevTrip)
+//                        }
+//                    }
                 }
             }
             .navigationTitle("Trips")

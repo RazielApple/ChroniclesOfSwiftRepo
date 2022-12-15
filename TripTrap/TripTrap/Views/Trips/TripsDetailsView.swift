@@ -25,7 +25,7 @@ struct TripsDetailsView: View {
                     GridRow {
                         TripsInfoChipView("5", systemImage: "person")
                         Spacer()
-                        TripsInfoChipView("13/Dec/2022", systemImage: "calendar")
+                        TripsInfoChipView("20/Dec/2022", systemImage: "calendar")
                         Spacer()
                         TripsInfoChipView("Free", systemImage: "eurosign")
                     }
