@@ -84,13 +84,6 @@ class PersistenceController: ObservableObject {
          saveData()
      }
      
-
-   
-     func updateTrip(entity: Trip){
-
-      
-         saveData()
-     }
      
      func saveData(){
          do{
