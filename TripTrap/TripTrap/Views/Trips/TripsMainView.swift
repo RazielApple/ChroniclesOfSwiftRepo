@@ -10,7 +10,7 @@ import SwiftUI
 struct TripsMainView: View {
     
     @State var isUpcomingTrip = true
-    @State private var isShowingCreateTripSheet: Bool = false
+
     
     var dummyTripsArrayOne = ["Upcoming Trip 1", "Upcoming Trip 2", "Upcoming Trip 3", "Upcoming Trip 4", "Upcoming Trip 5"]
     var dummyTripsArrayTwo = ["Previous Trip 1", "Previous Trip 2", "Previous Trip 3", "Previous Trip 4", "Previous Trip 5"]

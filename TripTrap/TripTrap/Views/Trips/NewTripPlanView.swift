@@ -9,6 +9,9 @@ import SwiftUI
 
 struct NewTripPlanView: View {
     
+    //Dummy image
+    var image: String
+    
     @State private var tripPrice: String = ""
     @State private var tripName: String = ""
     @State var selectedTripDate: Date = .now
@@ -21,7 +24,7 @@ struct NewTripPlanView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Image("castle")
+                Image(image)
                     .resizable()
                     .aspectRatio(4/3, contentMode: .fit)
                     .cornerRadius(8)
@@ -82,6 +85,6 @@ struct NewTripPlanView: View {
 
 struct NewTripPlanView_Previews: PreviewProvider {
     static var previews: some View {
-        NewTripPlanView()
+        NewTripPlanView(image: "guinness")
     }
 }

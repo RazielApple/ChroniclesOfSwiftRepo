@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AttractionDetailView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @State private var isShowingCreateTripSheet: Bool = false
     
     var attractions: Feature
     
@@ -27,7 +28,7 @@ struct AttractionDetailView: View {
                 
                 LazyVStack(alignment: .leading, pinnedViews: .sectionHeaders) {
                     Section(header: HeaderView(name: attractions.properties.name)) {
-
+                        
                         HStack {
                             Text("Brewery")
                             Spacer()
@@ -57,13 +58,26 @@ struct AttractionDetailView: View {
                         
                         
                     }
-//                    .headerProminence(.increased)
                     
                     
                 }
                 .padding()
             }
             .scrollIndicators(.hidden)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingCreateTripSheet.toggle()
+                    } label: {
+                        
+                        Text("Create new trip")
+                        
+                    }
+                    .sheet(isPresented: $isShowingCreateTripSheet) {
+                        NewTripPlanView(image: "guinness")
+                    }
+                }
+            }
         }
     }
 }
