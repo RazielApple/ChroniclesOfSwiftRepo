@@ -15,7 +15,7 @@ struct SearchTabView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("TripTrap")
+                    Text("TripTap")
                         .font(.title)
                         .bold()
                     Spacer()

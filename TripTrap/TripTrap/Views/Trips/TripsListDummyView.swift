@@ -49,7 +49,7 @@ struct PreviousTrip: View {
     let dummyPreviousTripsData = [
         TripMockUp(image: "sule_pagoda", name: "Sule Pagoda", people: "20", date: "22/Nov/2022", price: "12"),
         TripMockUp(image: "castleovo", name: "Castel Ovo", people: "9", date: "02/Dec/2022", price: "Free"),
-        TripMockUp(image: "nationalpark", name: "Killanery National Park", people: "18", date: "13/Dec/2022", price: "10"),
+        TripMockUp(image: "nationalpark", name: "Killarney National Park", people: "18", date: "13/Dec/2022", price: "10"),
     ]
     
     var body: some View {
