@@ -48,6 +48,8 @@ struct SearchTabView: View {
                             NavigationLink(destination: AttractionDetailView(attractions: item)) {
                                 SearchRowView(feature: item)
                             }
+                            .navigationBarTitleDisplayMode(.inline)
+                            
                         }
                     }
                     .listStyle(.plain)
