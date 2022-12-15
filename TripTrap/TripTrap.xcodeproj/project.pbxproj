@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25302428294B2A6300FA3B7A /* TripTapContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25302426294B2A6300FA3B7A /* TripTapContainer.xcdatamodeld */; };
 		4C006BCD2941FC40000D5113 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCC2941FC40000D5113 /* MapView.swift */; };
 		4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BCE29420A32000D5113 /* SearchTabView.swift */; };
 		4C006BD329420FE5000D5113 /* AttractionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006BD229420FE5000D5113 /* AttractionsModel.swift */; };
 		4C0C8FF329422B520002432F /* LargeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C8FF229422B520002432F /* LargeMapView.swift */; };
 		4C25C43A294099D2006C0918 /* TripTrapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C439294099D2006C0918 /* TripTrapApp.swift */; };
-		4C25C43C294099D2006C0918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C43B294099D2006C0918 /* ContentView.swift */; };
 		4C25C43E294099D3006C0918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C25C43D294099D3006C0918 /* Assets.xcassets */; };
 		4C25C441294099D3006C0918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C25C440294099D3006C0918 /* Preview Assets.xcassets */; };
 		4C25C443294099D3006C0918 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C442294099D3006C0918 /* Persistence.swift */; };
-		4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */; };
 		4C25C44E29409C58006C0918 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C44D29409C58006C0918 /* Home.swift */; };
 		4C25C45229411B20006C0918 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C45129411B20006C0918 /* LocationModel.swift */; };
 		4C25C456294122C3006C0918 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C455294122C3006C0918 /* ViewModel.swift */; };
@@ -39,17 +38,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25302427294B2A6300FA3B7A /* TripTapContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripTapContainer.xcdatamodel; sourceTree = "<group>"; };
 		4C006BCC2941FC40000D5113 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4C006BCE29420A32000D5113 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
 		4C006BD229420FE5000D5113 /* AttractionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsModel.swift; sourceTree = "<group>"; };
 		4C0C8FF229422B520002432F /* LargeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeMapView.swift; sourceTree = "<group>"; };
 		4C25C436294099D2006C0918 /* TripTrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripTrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C25C439294099D2006C0918 /* TripTrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrapApp.swift; sourceTree = "<group>"; };
-		4C25C43B294099D2006C0918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C25C43D294099D3006C0918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C25C440294099D3006C0918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C25C442294099D3006C0918 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		4C25C445294099D3006C0918 /* TripTrap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripTrap.xcdatamodel; sourceTree = "<group>"; };
 		4C25C447294099D3006C0918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C25C44D29409C58006C0918 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4C25C45129411B20006C0918 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
@@ -103,14 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				4C25C439294099D2006C0918 /* TripTrapApp.swift */,
-				4C25C43B294099D2006C0918 /* ContentView.swift */,
 				AC945E38294232CD00455E81 /* Utility */,
 				AC945E372942329900455E81 /* Views */,
 				AC945E362942329100455E81 /* Models */,
 				4C881AE12944B2E400E0B3DF /* Helpers */,
 				4C25C43D294099D3006C0918 /* Assets.xcassets */,
 				4C25C447294099D3006C0918 /* Info.plist */,
-				4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */,
 				4C25C43F294099D3006C0918 /* Preview Content */,
 			);
 			path = TripTrap;
@@ -160,6 +156,7 @@
 		AC945E38294232CD00455E81 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				25302426294B2A6300FA3B7A /* TripTapContainer.xcdatamodeld */,
 				4C25C442294099D3006C0918 /* Persistence.swift */,
 				4C25C457294132D3006C0918 /* LocationManager.swift */,
 			);
@@ -279,7 +276,6 @@
 				ACC585762949DC85002F5006 /* TripDatePicker.swift in Sources */,
 				4C731DB82947748E0001038C /* WikipediaModel.swift in Sources */,
 				4C881ADE2944921100E0B3DF /* AttractionDetailView.swift in Sources */,
-				4C25C43C294099D2006C0918 /* ContentView.swift in Sources */,
 				4C006BD329420FE5000D5113 /* AttractionsModel.swift in Sources */,
 				4C25C44E29409C58006C0918 /* Home.swift in Sources */,
 				AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */,
@@ -287,7 +283,6 @@
 				4C25C458294132D3006C0918 /* LocationManager.swift in Sources */,
 				4C25C45229411B20006C0918 /* LocationModel.swift in Sources */,
 				4C0C8FF329422B520002432F /* LargeMapView.swift in Sources */,
-				4C25C446294099D3006C0918 /* TripTrap.xcdatamodeld in Sources */,
 				4C25C456294122C3006C0918 /* ViewModel.swift in Sources */,
 				4C881AE329461E8400E0B3DF /* CreateTripView.swift in Sources */,
 				4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */,
@@ -297,6 +292,7 @@
 				ACC5856C2948798F002F5006 /* TripsRowView.swift in Sources */,
 				4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */,
 				ACC585702948C4D7002F5006 /* TripsInfoChipView.swift in Sources */,
+				25302428294B2A6300FA3B7A /* TripTapContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,13 +503,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4C25C444294099D3006C0918 /* TripTrap.xcdatamodeld */ = {
+		25302426294B2A6300FA3B7A /* TripTapContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4C25C445294099D3006C0918 /* TripTrap.xcdatamodel */,
+				25302427294B2A6300FA3B7A /* TripTapContainer.xcdatamodel */,
 			);
-			currentVersion = 4C25C445294099D3006C0918 /* TripTrap.xcdatamodel */;
-			path = TripTrap.xcdatamodeld;
+			currentVersion = 25302427294B2A6300FA3B7A /* TripTapContainer.xcdatamodel */;
+			path = TripTapContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
