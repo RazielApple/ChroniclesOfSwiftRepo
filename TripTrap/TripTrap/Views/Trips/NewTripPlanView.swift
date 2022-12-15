@@ -85,10 +85,6 @@ struct NewTripPlanView: View {
     }
     
     func addTrip() {
-        // Yes, this check makes no sense... Will fix later
-        if (tripName.isEmpty || tripPrice.isEmpty || maxPeople.isEmpty || meetingPoint.isEmpty || tripDescription.isEmpty) {
-            return
-        } else {
             vm.addTrip(name: tripName,
                        meetingPoint: meetingPoint,
                        price: tripPrice == "" ? Double(tripPrice)! : 0,
@@ -98,8 +94,6 @@ struct NewTripPlanView: View {
             for item in vm.savedEntities {
                 print(item.name ?? "fail")
             }
-        }
-        
     }
 }
 
