@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct TripMockUp: Identifiable {
     let id = UUID()
     let image: String
@@ -30,22 +32,19 @@ struct UpcomingTrip: View {
         TripMockUp(image: "museumnaples", name: "National Museum", people: "8", date: "14/Mar/2023", price: "Free", maxPeople: "20", meetingPoint: "Piazza Museo"),
         TripMockUp(image: "rockofcashel", name: "Rock of Cashel", people: "4", date: "09/Apr/2023", price: "90", maxPeople: "10", meetingPoint: "Historic Site of Cashel"),
         TripMockUp(image: "palace", name: "Capodimonte Royal Palace", people: "5", date: "01/May/2023", price: "20", maxPeople: "9", meetingPoint: "Capodimonte Royal Palace"),
+
     ]
 
     var body: some View {
         List {
-            ForEach(dummyUpcomingTripsData) { upTrip in
-                NavigationLink {
-                    TripsDetailsDummyView(tripDetail: upTrip)
-                } label: {
-                    TripsListDummyView(tripItem: upTrip)
-                }
+            ForEach(vm.savedEntities){ entity in
+                TripsRowView(pplGoing: Int(entity.participants), name: entity.name ?? "", price: Int(entity.price), date: entity.date ?? Date())
+            }
             }
         }
-        .scrollIndicators(.hidden)
-        .listStyle(.plain)
+        
     }
-}
+
 
 struct PreviousTrip: View {
     
@@ -66,7 +65,6 @@ struct PreviousTrip: View {
             }
         }
         .scrollIndicators(.hidden)
-        .listStyle(.plain)
     }
 }
 

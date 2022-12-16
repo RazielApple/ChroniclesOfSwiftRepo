@@ -87,12 +87,15 @@ struct NewTripPlanView: View {
     func addTrip() {
             vm.addTrip(name: tripName,
                        meetingPoint: meetingPoint,
-                       price: tripPrice == "" ? Double(tripPrice)! : 0,
+                       price: tripPrice == "" ?  0 :Double(tripPrice)!,
                        detail: tripDescription,
-                       maxPeople: maxPeople == "" ? Int(maxPeople)! : 10,
+                       maxPeople: maxPeople == "" ? 10 : Int(maxPeople)!,
                        date: selectedTripDate)
             for item in vm.savedEntities {
                 print(item.name ?? "fail")
+                print(item.price ?? "fail")
+                print(item.participants ?? "fail")
+                print(item.detail ?? "fail")
             }
     }
 }
