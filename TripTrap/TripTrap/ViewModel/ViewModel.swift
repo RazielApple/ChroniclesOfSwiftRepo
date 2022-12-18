@@ -11,11 +11,6 @@ import CommonCrypto
 
 class ViewModel: ObservableObject {
     @Published var attractionsList: [Feature] = []
-
- 
-}
-
-extension ViewModel {
     
     @MainActor
     func fetch(searchText: String) async throws {
@@ -64,8 +59,6 @@ extension ViewModel {
         
         return baseURL + a + "/" + a + b + "/" + underscoredName
     }
-    
-    
 }
 
 
