@@ -49,7 +49,7 @@ extension ViewModel {
         }
     
     
-    func getMD5Hash(itemName: String) -> String {
+    private func getMD5Hash(itemName: String) -> String {
         return String(itemName.md5)
     }
     
