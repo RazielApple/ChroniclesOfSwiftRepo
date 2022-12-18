@@ -10,6 +10,9 @@ import SwiftUI
 struct TripsRowView: View {
     
     @State var pplGoing: Int = 40
+    @State var name: String = "name"
+    @State var price: Int = 40
+    @State var date: Date = Date()
 
     var body: some View {
         
@@ -19,7 +22,7 @@ struct TripsRowView: View {
                 CircleImage(image: Image("castle"))
                     .frame(height: 80)
                 VStack(alignment: .leading)  {
-                    Text("Castle Nuovo")
+                    Text(name)
                         .font(.headline)
 
                     HStack {
@@ -33,7 +36,7 @@ struct TripsRowView: View {
                     .padding(.top)
                     
                     
-                    Label("1000", systemImage: "eurosign")
+                    Label(String(price), systemImage: "eurosign")
                         .labelStyle(.titleAndIcon)
                 }
                 Spacer()
