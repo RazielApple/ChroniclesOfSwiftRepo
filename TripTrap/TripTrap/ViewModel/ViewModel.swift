@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import CommonCrypto
 
 class ViewModel: ObservableObject {
     @Published var attractionsList: [Feature] = []
@@ -48,5 +49,21 @@ extension ViewModel {
         }
     
     
+    func getMD5Hash(itemName: String) -> String {
+        return String(itemName.md5)
+    }
+    
+    func getWikipediaImage(imageName: String) -> (String) {
+        // This is the base address that the image filename should be appended to. 
+        let baseURL = "https://upload.wikimedia.org/wikipedia/commons/"
+        
+        
+        
+        return ""
+    }
+    
+    
 }
+
+
 
