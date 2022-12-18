@@ -53,6 +53,8 @@ class ViewModel: ObservableObject {
         let baseURL = "https://upload.wikimedia.org/wikipedia/commons/"
         
         let underscoredName = imageName.replacingOccurrences(of: " ", with: "_")
+        
+        // In order to retrieve the image, the first and second chars from the MD5 hash are required in the format /a/ab/
         let md5 = getMD5Hash(itemName: underscoredName)
         let a = String(md5[md5.index(md5.startIndex, offsetBy: 0)])
         let b = String(md5[md5.index(md5.startIndex, offsetBy: 1)])
