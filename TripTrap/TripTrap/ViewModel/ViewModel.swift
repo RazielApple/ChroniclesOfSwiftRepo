@@ -54,12 +54,15 @@ extension ViewModel {
     }
     
     func getWikipediaImage(imageName: String) -> (String) {
-        // This is the base address that the image filename should be appended to. 
+        // This is the base address that the image filename should be appended to.
         let baseURL = "https://upload.wikimedia.org/wikipedia/commons/"
         
+        let underscoredName = imageName.replacingOccurrences(of: " ", with: "_")
+        let md5 = getMD5Hash(itemName: underscoredName)
+        let a = String(md5[md5.index(md5.startIndex, offsetBy: 0)])
+        let b = String(md5[md5.index(md5.startIndex, offsetBy: 1)])
         
-        
-        return ""
+        return baseURL + a + "/" + a + b + "/" + underscoredName + "/"
     }
     
     
