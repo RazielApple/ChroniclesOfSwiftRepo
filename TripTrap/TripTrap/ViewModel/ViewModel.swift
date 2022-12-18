@@ -62,7 +62,7 @@ extension ViewModel {
         let a = String(md5[md5.index(md5.startIndex, offsetBy: 0)])
         let b = String(md5[md5.index(md5.startIndex, offsetBy: 1)])
         
-        return baseURL + a + "/" + a + b + "/" + underscoredName + "/"
+        return baseURL + a + "/" + a + b + "/" + underscoredName
     }
     
     
