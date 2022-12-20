@@ -48,23 +48,56 @@ class ViewModel: ObservableObject {
     }
     
     
+    // The following func and enum are used by getWikipediaImage()
+    
     private func getMD5Hash(itemName: String) -> String {
         return String(itemName.md5)
     }
     
-    func getWikipediaImage(imageName: String) -> (String) {
+    private enum md5Errors: Error {
+        case empty
+        case missingFormatting
+        case incorrectFormat
+    }
+    
+    func getWikipediaImage(imageName: String) throws -> (String?) {
         // This is the base address that the image filename should be appended to.
         let baseURL = "https://upload.wikimedia.org/wikipedia/commons/"
+        var response: String? = nil
         
-        let underscoredName = imageName.replacingOccurrences(of: " ", with: "_")
+        // The image string should start with "File:" which should be stripped.
+        // If it doesn't start with File: it is likely an incorrect filename, so throw an error.
+        // If it starts with File:P. it is also incorrect, so throw an error
         
-        // In order to retrieve the image, the first and second chars from the MD5 hash are required in the format /a/ab/
-        let md5 = getMD5Hash(itemName: underscoredName)
-        let a = String(md5[md5.index(md5.startIndex, offsetBy: 0)])
-        let b = String(md5[md5.index(md5.startIndex, offsetBy: 1)])
+        do {
+            guard !imageName.isEmpty else { throw md5Errors.empty }
+            guard imageName.contains("File:") else { throw md5Errors.missingFormatting }
+            guard !imageName.contains("File:P.") else { throw md5Errors.incorrectFormat }
+            
+            let strippedName = imageName.replacingOccurrences(of: "File:", with: "")
+            let underscoredName = strippedName.replacingOccurrences(of: " ", with: "_")
+            
+            // In order to retrieve the image, the first and second chars from the MD5 hash are required in the format /a/ab/
+            let md5 = getMD5Hash(itemName: underscoredName)
+            let a = String(md5[md5.index(md5.startIndex, offsetBy: 0)])
+            let b = String(md5[md5.index(md5.startIndex, offsetBy: 1)])
+            
+            response = baseURL + a + "/" + a + b + "/" + underscoredName
+            
+        } catch md5Errors.empty {
+            print("Error: the string passed to getWikipediaImage() was empty")
+        } catch md5Errors.missingFormatting {
+            print("Error: the string passed to getWikipediaImage() didn't contain \"File:\" so it was likely incorrect")
+        } catch md5Errors.incorrectFormat {
+            print("Error: the string passed to getWikipediaImage() contained \"File:P.\" so it was incorrect")
+        }
         
-        return baseURL + a + "/" + a + b + "/" + underscoredName
+        return response
     }
+
+
+    
+    
 }
 
 
