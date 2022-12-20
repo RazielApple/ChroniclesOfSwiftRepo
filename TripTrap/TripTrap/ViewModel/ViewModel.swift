@@ -95,9 +95,6 @@ class ViewModel: ObservableObject {
         return response
     }
 
-
-    
-    
 }
 
 

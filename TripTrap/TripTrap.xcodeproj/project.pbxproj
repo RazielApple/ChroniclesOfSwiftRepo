@@ -22,6 +22,7 @@
 		4C25C458294132D3006C0918 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C25C457294132D3006C0918 /* LocationManager.swift */; };
 		4C731DB82947748E0001038C /* WikipediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C731DB72947748E0001038C /* WikipediaModel.swift */; };
 		4C731DBA294782240001038C /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C731DB9294782240001038C /* SearchRowView.swift */; };
+		4C757ADE2951B12A00E985F8 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C757ADD2951B12A00E985F8 /* UserProfileModel.swift */; };
 		4C881ADE2944921100E0B3DF /* AttractionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881ADD2944921100E0B3DF /* AttractionDetailView.swift */; };
 		4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881ADF2944B2D100E0B3DF /* CircleImage.swift */; };
 		4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */; };
@@ -56,6 +57,7 @@
 		4C25C457294132D3006C0918 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4C731DB72947748E0001038C /* WikipediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaModel.swift; sourceTree = "<group>"; };
 		4C731DB9294782240001038C /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
+		4C757ADD2951B12A00E985F8 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		4C881ADD2944921100E0B3DF /* AttractionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttractionDetailView.swift; path = TripTrap/Views/AttractionDetailView.swift; sourceTree = SOURCE_ROOT; };
 		4C881ADF2944B2D100E0B3DF /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4C25C45129411B20006C0918 /* LocationModel.swift */,
+				4C757ADD2951B12A00E985F8 /* UserProfileModel.swift */,
 				4C006BD229420FE5000D5113 /* AttractionsModel.swift */,
 				4C731DB72947748E0001038C /* WikipediaModel.swift */,
 				4CF969412947161500B5B4D3 /* TripModel.swift */,
@@ -280,6 +283,7 @@
 			files = (
 				4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */,
 				4CF969422947161500B5B4D3 /* TripModel.swift in Sources */,
+				4C757ADE2951B12A00E985F8 /* UserProfileModel.swift in Sources */,
 				ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */,
 				ACC585722949BCC0002F5006 /* NewTripPlanView.swift in Sources */,
 				4C731DBA294782240001038C /* SearchRowView.swift in Sources */,

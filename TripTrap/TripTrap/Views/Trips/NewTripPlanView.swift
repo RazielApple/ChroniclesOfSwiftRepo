@@ -76,9 +76,6 @@ struct NewTripPlanView: View {
                         //TODO: write save call
                         addTrip()
                     }
-//                    .disabled(
-//                        tripName.isEmpty || tripPrice.isEmpty || maxPeople.isEmpty || meetingPoint.isEmpty || tripDescription.isEmpty
-//                    )
                 }
             }
         }
