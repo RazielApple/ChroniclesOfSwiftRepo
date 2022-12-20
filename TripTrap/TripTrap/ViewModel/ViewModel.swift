@@ -57,7 +57,6 @@ class ViewModel: ObservableObject {
     private enum md5Errors: Error {
         case empty
         case missingFormatting
-        case incorrectFormat
     }
     
     func getWikipediaImage(imageName: String) throws -> (String?) {
@@ -67,12 +66,10 @@ class ViewModel: ObservableObject {
         
         // The image string should start with "File:" which should be stripped.
         // If it doesn't start with File: it is likely an incorrect filename, so throw an error.
-        // If it starts with File:P. it is also incorrect, so throw an error
         
         do {
             guard !imageName.isEmpty else { throw md5Errors.empty }
             guard imageName.contains("File:") else { throw md5Errors.missingFormatting }
-            guard !imageName.contains("File:P.") else { throw md5Errors.incorrectFormat }
             
             let strippedName = imageName.replacingOccurrences(of: "File:", with: "")
             let underscoredName = strippedName.replacingOccurrences(of: " ", with: "_")
@@ -88,8 +85,6 @@ class ViewModel: ObservableObject {
             print("Error: the string passed to getWikipediaImage() was empty")
         } catch md5Errors.missingFormatting {
             print("Error: the string passed to getWikipediaImage() didn't contain \"File:\" so it was likely incorrect")
-        } catch md5Errors.incorrectFormat {
-            print("Error: the string passed to getWikipediaImage() contained \"File:P.\" so it was incorrect")
         }
         
         return response
