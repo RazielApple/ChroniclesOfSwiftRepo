@@ -19,6 +19,11 @@ struct Home: View {
                 .tabItem {
                     Label("Trips", systemImage: "figure.hiking")
                 }
+            
+            UserProfileTabView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
         }
 //        .accentColor(.white)
     }
