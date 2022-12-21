@@ -26,6 +26,7 @@
 		4C881AE02944B2D100E0B3DF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881ADF2944B2D100E0B3DF /* CircleImage.swift */; };
 		4C881AE52946222300E0B3DF /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */; };
 		4C881AE72946234A00E0B3DF /* SearchbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C881AE62946234A00E0B3DF /* SearchbarView.swift */; };
+		4CADE8C72952FC68007DA415 /* UserProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADE8C62952FC68007DA415 /* UserProfileTabView.swift */; };
 		4CBF2DE2294C6C7A006F80E7 /* MD5Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF2DE1294C6C7A006F80E7 /* MD5Calculator.swift */; };
 		4CF969422947161500B5B4D3 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF969412947161500B5B4D3 /* TripModel.swift */; };
 		AC945E3B2942CA7A00455E81 /* TripsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC945E3A2942CA7A00455E81 /* TripsMainView.swift */; };
@@ -60,6 +61,7 @@
 		4C881ADF2944B2D100E0B3DF /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4C881AE42946222300E0B3DF /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
 		4C881AE62946234A00E0B3DF /* SearchbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarView.swift; sourceTree = "<group>"; };
+		4CADE8C62952FC68007DA415 /* UserProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTabView.swift; sourceTree = "<group>"; };
 		4CBF2DE1294C6C7A006F80E7 /* MD5Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Calculator.swift; sourceTree = "<group>"; };
 		4CF969412947161500B5B4D3 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		AC945E3A2942CA7A00455E81 /* TripsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsMainView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		4CADE8C52952FC3B007DA415 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4CADE8C62952FC68007DA415 /* UserProfileTabView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
 		4CBF2DC6294C65DB006F80E7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 				AC945E3C2942CE7C00455E81 /* Map */,
 				AC945E392942CA5600455E81 /* Trips */,
 				AC945E3D2942CEA200455E81 /* Search */,
+				4CADE8C52952FC3B007DA415 /* UserProfile */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C006BCF29420A32000D5113 /* SearchTabView.swift in Sources */,
+				4CADE8C72952FC68007DA415 /* UserProfileTabView.swift in Sources */,
 				4CF969422947161500B5B4D3 /* TripModel.swift in Sources */,
 				4C757ADE2951B12A00E985F8 /* UserProfileModel.swift in Sources */,
 				ACC5856E2948C0C9002F5006 /* TripsDetailsView.swift in Sources */,

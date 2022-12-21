@@ -31,15 +31,14 @@ struct TripsMainView: View {
                     //dummy temp data
                     UpcomingTrip()
                     
-//                    List {
-//                        ForEach(dummyTripsArrayOne, id: \.self) { upTrip in
-//                            NavigationLink {
-//                                TripsDetailsView()
-//                            } label: {
-//                                TripsRowView()
-//                            }
-//                        }
-//                    }
+                    List {
+                        ForEach(vm.savedEntities, id: \.self) { trip in
+                            NavigationLink(destination: TripsDetailsView()) {
+                                TripsRowView()
+                            }
+                        }
+                    }
+                    .listStyle(.plain)
                 } else {
                     
                     //dummy temp data
